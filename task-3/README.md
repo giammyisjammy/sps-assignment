@@ -9,7 +9,7 @@ Make sure you have Node.js and npm (or yarn) installed on your machine.
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/task-3.git
+git clone https://github.com/giammyisjammy/sps-assignment.git
 ```
 
 2. Navigate into the project directory:
@@ -18,7 +18,7 @@ git clone https://github.com/your-username/task-3.git
 cd task-3
 ```
 
-3. Install dependencies using npm:
+3. Install dependencies using `pnpm`:
 
 ```bash
 pnpm install
@@ -32,7 +32,7 @@ In the project directory, you can run:
 pnpm dev
 ```
 
-Runs the app in development mode. Open http://localhost:3000 to view it in the browser.
+Runs the app in development mode. Open http://localhost:5173 to view it in the browser.
 
 The page will reload if you make edits. You will also see any lint errors in the console.
 
@@ -45,3 +45,5 @@ Builds the app for production to the `dist` folder. It correctly bundles React i
 The build is minified and the filenames include the hashes for cache busting.
 
 Your app is ready to be deployed!
+
+> N.B. this file was generated with ChatGPT and redacted by human =)
