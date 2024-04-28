@@ -3021,7 +3021,12 @@ Insert into inventories (PRODUCT_ID,WAREHOUSE_ID,QUANTITY) values (204,8,142);
 Insert into inventories (PRODUCT_ID,WAREHOUSE_ID,QUANTITY) values (205,8,142);
 Insert into inventories (PRODUCT_ID,WAREHOUSE_ID,QUANTITY) values (207,8,121);
 
-
+INSERT INTO sps.transaction_types (transaction_type_description) VALUES
+	 ('CashOnDelivery'),
+	 ('CreditCard'),
+	 ('DebitCard'),
+	 ('WireTransfer');
+	 
 -- Per praticità, assumo che vengano emesse fatture solo per gli ordini non cancellati
 -- Vado quindi a popolare le tabelle orders e order_items secondo questa logica
 INSERT INTO sps.invoices ( invoice_id, order_id, invoice_date, invoice_details ) 
