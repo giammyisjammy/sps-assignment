@@ -3021,15 +3021,15 @@ Insert into inventories (PRODUCT_ID,WAREHOUSE_ID,QUANTITY) values (204,8,142);
 Insert into inventories (PRODUCT_ID,WAREHOUSE_ID,QUANTITY) values (205,8,142);
 Insert into inventories (PRODUCT_ID,WAREHOUSE_ID,QUANTITY) values (207,8,121);
 
-INSERT INTO sps.transaction_types (transaction_type_description) VALUES
+INSERT INTO transaction_types (transaction_type_description) VALUES
 	 ('CashOnDelivery'),
 	 ('CreditCard'),
 	 ('DebitCard'),
 	 ('WireTransfer');
-	 
+
 -- Per praticità, assumo che vengano emesse fatture solo per gli ordini non cancellati
 -- Vado quindi a popolare le tabelle orders e order_items secondo questa logica
-INSERT INTO sps.invoices ( invoice_id, order_id, invoice_date, invoice_details ) 
+INSERT INTO invoices ( invoice_id, order_id, invoice_date, invoice_details ) 
 SELECT 
 	order_id AS invoice_id,
 	order_id, 
@@ -3041,7 +3041,7 @@ WHERE
 	AND status != 'Canceled'
 ;
 
-INSERT INTO sps.invoice_line_items ( order_id, item_id, invoice_number, product_id, product_title, product_quantity, product_price )
+INSERT INTO invoice_line_items ( order_id, item_id, invoice_number, product_id, product_title, product_quantity, product_price )
 SELECT 
 	oi.order_id, 
 	oi.item_id, 
@@ -3062,7 +3062,7 @@ WHERE
 
 -- Anche qui per praticità assumo che ad ogni fattura corrisponda un pagamento
 -- pari al valore dell'ordine
-INSERT INTO sps.financial_transactions (
+INSERT INTO financial_transactions (
 	transaction_id, 
 	customer_id, 
 	invoice_number, 
