@@ -27,7 +27,7 @@ _Descrivi come gestiresti la concorrenza in un'applicazione Python, facendo rife
 > ⚠️ Premessa: NON sono uno sviluppatore Python. La mia risposta prende molta
 > ispirazione dai contenuti dalla documentazione ufficiale. Ho provato a
 > rielaborare con le mie parole ma ci sono alte probabilità che mi sbagli (purtroppo
-> si tratta di un concetto complesso e padroneggiarlo richiederebbe più tempo.)
+> si tratta di un concetto complesso e padroneggiarlo completamente richiederebbe dell'esperienza in più.)
 
 In Python, ci sono due approcci principali per gestire la concorrenza: il threading (utilizzo di thread) e l'asyncio (utilizzo di coroutines).
 
