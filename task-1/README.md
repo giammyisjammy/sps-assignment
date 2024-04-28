@@ -2,7 +2,7 @@
 
 > _Crea uno UML con articoli magazzino e transazioni. Assicurati di definire la tipologia di relazione tra le tabelle e la tipologia di dato e di key._
 
-![Diagramma ER](<SPS Assignment.svg>)
+![Diagramma ER](docs/UML-diagram.svg)
 
 Link a [Diagramma ER](https://dbdiagram.io/d/SPS-Assignment-661fa44f03593b6b61385d61)
 
@@ -60,4 +60,5 @@ GROUP BY tt.transaction_type_description
 ```
 
 Eseguita sul DB fornito produce questo risultato (`CashOnDelivery` = contrassegno):
-![Screenshot console DBeaver dell'esecuzione della query](results.png)
+
+![Screenshot console DBeaver dell'esecuzione della query](docs/query-results.png)
