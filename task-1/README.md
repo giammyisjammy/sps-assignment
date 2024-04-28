@@ -2,6 +2,8 @@
 
 > _Crea uno UML con articoli magazzino e transazioni. Assicurati di definire la tipologia di relazione tra le tabelle e la tipologia di dato e di key._
 
+![Diagramma ER](<SPS Assignment.svg>)
+
 Link a [Diagramma ER](https://dbdiagram.io/d/SPS-Assignment-661fa44f03593b6b61385d61)
 
 Alcune considerazioni:
